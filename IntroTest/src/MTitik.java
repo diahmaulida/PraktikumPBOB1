@@ -1,7 +1,7 @@
 /**
  * Nama File    : MTitik.java
  * Deskripsi    : main class untuk mencoba class Titik
- * Pembuat      : [Nama Anda]
+ * Pembuat      : diah maulida pratiwi
  * Tanggal      : 19 Februari 2026
  */
 
