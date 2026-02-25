@@ -100,5 +100,8 @@ public class MTitik {
         // Menampilkan jarakpusat T2 ke titik pusat (0,0)
         double jarakPusat2 = T2.getJarakPusat();
         System.out.println("Jarak T2 ke titik pusat (0,0): " + jarakPusat2);
+        
+        // menghitung jumlah objek Titik yang telah dibuat
+        System.out.println("Jumlah objek Titik yang telah dibuat: " + Titik.getCounterTitik());
     }
 }
