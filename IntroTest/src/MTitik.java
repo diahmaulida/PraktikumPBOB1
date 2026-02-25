@@ -23,6 +23,35 @@ public class MTitik {
         T1.geser(3, 4); 
         
         // Menampilkan koordinat T1 setelah digeser
-        T1.printTitik(); 
+        T1.printTitik();
+
+        // Menampilkan kuadran T1 setelah digeser
+        System.out.println("Kuadran T1: " + T1.getKuadran());
+
+        // Menampilkan jumlah objek Titik yang telah dibuat
+        System.out.println("Jumlah objek Titik yang telah dibuat: " + Titik.getCounterTitik());
+
+        // setRefleksiX untuk T1
+        T1.setRefleksiX();
+
+        // Menampilkan koordinat T1 setelah direfleksikan terhadap sumbu X
+        T1.printTitik();
+
+        // setRefleksiY untuk T1
+        T1.setRefleksiY();
+
+        // Menampilkan koordinat T1 setelah direfleksikan terhadap sumbu Y
+        T1.printTitik();
+
+        // Jarak untuk T1 ke titik lain (5,6)
+        Titik T2 = new Titik();
+        T2.setAbsis(5);
+        T2.setOrdinat(6);
+        double jarak = T1.getJarak(T2);
+        System.out.println("Jarak antara T1 dan T2: " + jarak);
+        
+        // Menampilkan jarakpusat T1 ke titik pusat (0,0)
+        double jarakPusat = T1.getJarakPusat();
+        System.out.println("Jarak T1 ke titik pusat (0,0): " + jarakPusat);
     }
 }
