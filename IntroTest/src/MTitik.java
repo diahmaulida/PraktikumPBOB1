@@ -53,5 +53,52 @@ public class MTitik {
         // Menampilkan jarakpusat T1 ke titik pusat (0,0)
         double jarakPusat = T1.getJarakPusat();
         System.out.println("Jarak T1 ke titik pusat (0,0): " + jarakPusat);
+
+        // Membuat objek titik T1 (0,0)
+        Titik T2 = new Titik(); 
+        
+        // Mengubah absis T2 dengan nilai 3
+        T2.setAbsis(3); 
+        
+        // Mengubah ordinat T2 dengan nilai 4
+        T2.setOrdinat(4); 
+        
+        // Mencetak koordinat T2 ke layar
+        T2.printTitik(); 
+        
+        // Menggeser T2 sejauh (3,4)
+        T2.geser(3, 4); 
+        
+        // Menampilkan koordinat T2 setelah digeser
+        T2.printTitik();
+
+        // Menampilkan kuadran T2 setelah digeser
+        System.out.println("Kuadran T2: " + T2.getKuadran());
+
+        // Menampilkan jumlah objek Titik yang telah dibuat
+        System.out.println("Jumlah objek Titik yang telah dibuat: " + Titik.getCounterTitik());
+
+        // setRefleksiX untuk T2
+        T2.setRefleksiX();
+
+        // Menampilkan koordinat T2 setelah direfleksikan terhadap sumbu X
+        T2.printTitik();
+
+        // setRefleksiY untuk T2
+        T2.setRefleksiY();
+
+        // Menampilkan koordinat T2 setelah direfleksikan terhadap sumbu Y
+        T2.printTitik();
+
+        // Jarak untuk T2 ke titik lain (5,6)
+        Titik T3 = new Titik();
+        T3.setAbsis(5);
+        T3.setOrdinat(6);
+        double jarak = T2.getJarak(T3);
+        System.out.println("Jarak antara T2 dan T3: " + jarak);
+        
+        // Menampilkan jarakpusat T2 ke titik pusat (0,0)
+        double jarakPusat = T2.getJarakPusat();
+        System.out.println("Jarak T2 ke titik pusat (0,0): " + jarakPusat);
     }
 }
