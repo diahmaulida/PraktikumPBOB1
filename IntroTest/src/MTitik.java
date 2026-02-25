@@ -44,11 +44,11 @@ public class MTitik {
         T1.printTitik();
 
         // Jarak untuk T1 ke titik lain (5,6)
-        Titik T2 = new Titik();
-        T2.setAbsis(5);
-        T2.setOrdinat(6);
-        double jarak = T1.getJarak(T2);
-        System.out.println("Jarak antara T1 dan T2: " + jarak);
+        Titik T_lain = new Titik();
+        T_lain.setAbsis(5);
+        T_lain.setOrdinat(6);
+        double jarak = T1.getJarak(T_lain);
+        System.out.println("Jarak antara T1 dan T_lain: " + jarak);
         
         // Menampilkan jarakpusat T1 ke titik pusat (0,0)
         double jarakPusat = T1.getJarakPusat();
