@@ -94,11 +94,11 @@ public class MTitik {
         Titik T3 = new Titik();
         T3.setAbsis(5);
         T3.setOrdinat(6);
-        double jarak = T2.getJarak(T3);
-        System.out.println("Jarak antara T2 dan T3: " + jarak);
+        double jarak2 = T2.getJarak(T3);
+        System.out.println("Jarak antara T2 dan T3: " + jarak2);
         
         // Menampilkan jarakpusat T2 ke titik pusat (0,0)
-        double jarakPusat = T2.getJarakPusat();
-        System.out.println("Jarak T2 ke titik pusat (0,0): " + jarakPusat);
+        double jarakPusat2 = T2.getJarakPusat();
+        System.out.println("Jarak T2 ke titik pusat (0,0): " + jarakPusat2);
     }
 }
