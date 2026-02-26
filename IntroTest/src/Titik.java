@@ -2,7 +2,7 @@
  * Nama File    : Titik.java
  * Deskripsi    : berisi atribut dan method dalam class Titik
  * Pembuat      : Diah Maulida Pratiwi
- * Tanggal      : 19 Februari 2026
+ * Tanggal      : 25 Februari 2026
  */
 
 public class Titik {
@@ -54,6 +54,7 @@ public class Titik {
         System.out.println("Titik (" + absis + "," + ordinat + ")");
     }
     
+    // mengembalikan kuadran tempat titik berada
     int getKuadran(){
         if (absis > 0 && ordinat > 0) {
         return 1;
@@ -67,27 +68,38 @@ public class Titik {
         return 0;
         }
     }
+
+    // menghitung jarak titik ke titik pusat (0,0)
     double getJarakPusat() {
         double jarak = Math.sqrt(Math.pow(absis, 2) + Math.pow(ordinat, 2));
         return jarak;
     }
+
+    // menghitung jarak titik ke titik lain t
     double getJarak(Titik t) {
         double jarak = Math.sqrt(Math.pow(absis - t.absis, 2) + Math.pow(ordinat - t.ordinat, 2));
         return jarak;
     }
 
+    // merefleksikan titik terhadap sumbu X
     void setRefleksiX() {
         ordinat = -ordinat;
     }
+
+    // merefleksikan titik terhadap sumbu Y
     void setRefleksiY() {
         absis = -absis;
     }
+
+    // mengembalikan objek Titik baru yang merupakan hasil refleksi terhadap sumbu X
     Titik getRefleksiX() {
         Titik t = new Titik();
         t.absis = absis;
         t.ordinat = -ordinat;
         return t;
     }
+
+    // mengembalikan objek Titik baru yang merupakan hasil refleksi terhadap sumbu Y
     Titik getRefleksiY() {
         Titik t = new Titik();
         t.absis = -absis;
