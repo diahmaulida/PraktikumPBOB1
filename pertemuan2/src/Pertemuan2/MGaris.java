@@ -12,7 +12,7 @@ public class MGaris {
         // membuat objek garis G2 dengan titik awal (0,0) dan titik akhir (0,0)
         Garis G2 = new Garis();
 
-        // mengubah titik awal G2 menjadi (2,3) dan titik akhir menjadi (5,7)
+        // mengubah titik awal G2 menjadi (0,0) dan titik akhir menjadi (1,1)
         Titik t1 = new Titik();
         t1.setAbsis(0);
         t1.setOrdinat(0);
