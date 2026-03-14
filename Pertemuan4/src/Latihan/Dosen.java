@@ -1,3 +1,7 @@
+//Nama File = Dosen.java
+//Deskripsi = membuat fungsi dan prosedure Dosen
+//Pembuat   = Diah Maulida Pratiwi-24060124120034
+//Tanggal   = 14 Maret 2026
 package Latihan;
 import java.time.LocalDate;
 

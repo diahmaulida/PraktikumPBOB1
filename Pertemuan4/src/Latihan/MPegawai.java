@@ -1,3 +1,7 @@
+//Nama File = MPegawai.java
+//Deskripsi = membuat fungsi dan prosedure Main Pegawai
+//Pembuat   = Diah Maulida Pratiwi-24060124120034
+//Tanggal   = 14 Maret 2026
 package Latihan;
 
 import java.time.LocalDate;
