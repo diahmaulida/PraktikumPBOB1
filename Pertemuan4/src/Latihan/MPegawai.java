@@ -9,7 +9,7 @@ import java.time.LocalDate;
 public class MPegawai {
     public static void main(String[] args) {
         // membuat objek dosen tetap dan menampilkan infonya
-        DosenTetap dt = new DosenTetap("9545647548", "Andi", LocalDate.of(1990, 5,5), LocalDate.of(2015, 1, 1), 5000000, "Fakultas Sains dan Matematika", "78647324");
+        DosenTetap dt = new DosenTetap("9545647548", "Andi", LocalDate.of(1990, 5, 5), LocalDate.of(2015, 1, 1), 5000000, "Fakultas Sains dan Matematika", "78647324");
         dt.printInfo();
         System.out.println();
 
@@ -19,7 +19,7 @@ public class MPegawai {
         System.out.println();
 
         // membuat objek tendik dan menampilkan infonya
-        Tendik tk = new Tendik("9545647555", "Lala", LocalDate.of(1985, 7,5), LocalDate.of(2017, 3, 1), 3500000, "Akademik");
+        Tendik tk = new Tendik("9545647555", "Lala", LocalDate.of(1985, 7, 5), LocalDate.of(2017, 3, 1), 3500000, "Akademik");
         tk.printInfo();
     }
 }

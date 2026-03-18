@@ -9,7 +9,7 @@ import java.time.LocalDate;
 public class DosenTetap extends Dosen {
     // Atribut
     private String nidn;
-    private static final int BUP = 65;
+    private static final int BUP = 65; // Batas Usia Pensiun dosen tetap
 
     // Konstruktor DosenTetap
     public DosenTetap(String nip, String nama, LocalDate tanggalLahir, LocalDate tmt, double gajiPokok, String fakultas, String nidn) {
@@ -27,7 +27,7 @@ public class DosenTetap extends Dosen {
         return BUP;
     }
 
-    // mengembalikan Tunjangan dosen tetap
+    // mengembalikan tunjangan dosen tetap: 2% x masa kerja (tahun) x gaji pokok
     @Override
     public double getTunjangan() {
         return 0.02 * getMasaKerja().getYears() * gajiPokok;
@@ -38,15 +38,15 @@ public class DosenTetap extends Dosen {
     public void printInfo() {
         int tahun = getMasaKerja().getYears();
         System.out.println("NIP             : " + nip);
-        System.out.println("NIDN            : " + nidn);       
-        System.out.println("Nama            : " + nama);        
-        System.out.println("Tanggal lahir   : " + formatTanggal(tanggalLahir));
+        System.out.println("NIDN            : " + nidn);
+        System.out.println("Nama            : " + nama);
+        System.out.println("Tanggal Lahir   : " + formatTanggal(tanggalLahir));
         System.out.println("TMT             : " + formatTanggal(tmt));
-        System.out.println("Jabatan         : Dosen Tetap");  
+        System.out.println("Jabatan         : Dosen Tetap");
         System.out.println("Fakultas        : " + fakultas);
         System.out.println("Masa Kerja      : " + formatMasaKerja());
         System.out.println("Tanggal Pensiun : " + formatTanggal(getTanggalPensiun(BUP)));
-        System.out.println("Gaji Pokok      : " + formatRupiah(gajiPokok));             
+        System.out.println("Gaji Pokok      : " + formatRupiah(gajiPokok));
         System.out.printf("Tunjangan       : 2%% x %d x %s = %s%n", tahun, formatRupiah(gajiPokok), formatRupiah(getTunjangan()));
     }
 }

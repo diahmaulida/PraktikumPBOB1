@@ -9,7 +9,7 @@ import java.time.LocalDate;
 public class Tendik extends Pegawai {
     // Atribut
     private String bidang;
-    private static final int BUP = 55;
+    private static final int BUP = 55; // Batas Usia Pensiun tendik
 
     // Konstruktor Tendik
     public Tendik(String nip, String nama, LocalDate tanggalLahir, LocalDate tmt, double gajiPokok, String bidang) {
@@ -22,25 +22,25 @@ public class Tendik extends Pegawai {
         return bidang;
     }
 
-    // Mengembalikan tunjangan tendik
+    // mengembalikan tunjangan tendik: 1% x masa kerja (tahun) x gaji pokok
     @Override
     public double getTunjangan() {
         return 0.01 * getMasaKerja().getYears() * gajiPokok;
     }
 
-    // Menampilkan informasi tendik
+    // menampilkan informasi tendik
     @Override
     public void printInfo() {
         int tahun = getMasaKerja().getYears();
-        System.out.println("NIP             : " + nip);  
-        System.out.println("Nama            : " + nama);        
-        System.out.println("Tanggal lahir   : " + formatTanggal(tanggalLahir));
+        System.out.println("NIP             : " + nip);
+        System.out.println("Nama            : " + nama);
+        System.out.println("Tanggal Lahir   : " + formatTanggal(tanggalLahir));
         System.out.println("TMT             : " + formatTanggal(tmt));
-        System.out.println("Jabatan         : Tenaga Kependidikan");  
+        System.out.println("Jabatan         : Tenaga Kependidikan");
         System.out.println("Bidang          : " + bidang);
         System.out.println("Masa Kerja      : " + formatMasaKerja());
         System.out.println("Tanggal Pensiun : " + formatTanggal(getTanggalPensiun(BUP)));
-        System.out.println("Gaji Pokok      : " + formatRupiah(gajiPokok));             
-        System.out.printf("Tunjangan        : 1%% x %d x %s = %s%n", tahun,formatRupiah(gajiPokok), formatRupiah(getTunjangan()));
+        System.out.println("Gaji Pokok      : " + formatRupiah(gajiPokok));
+        System.out.printf("Tunjangan       : 1%% x %d x %s = %s%n", tahun, formatRupiah(gajiPokok), formatRupiah(getTunjangan()));
     }
 }
