@@ -17,6 +17,11 @@ public class Tendik extends Pegawai {
         this.bidang = bidang;
     }
 
+    // mengembalikan bidang
+    public String getBidang() {
+        return bidang;
+    }
+
     // Mengembalikan tunjangan tendik
     @Override
     public double getTunjangan() {

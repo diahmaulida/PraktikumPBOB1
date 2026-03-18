@@ -15,4 +15,10 @@ public abstract class Dosen extends Pegawai {
         this.fakultas = fakultas;
     }
 
+    // mengembalikan fakultas
+    public String getFakultas() {
+        return fakultas;
+    }
+    
+
 }

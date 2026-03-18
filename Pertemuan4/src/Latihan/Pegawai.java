@@ -29,6 +29,32 @@ public abstract class Pegawai {
     }
 
     // Metode
+
+    // mengembalikan nama
+    public String getNama() {
+        return nama;
+    }
+
+    // mengembalikan nip
+    public String getNip() {
+        return nip;
+    }
+
+    // mengembalikan gaji pokok
+    public double getGajiPokok() {
+        return gajiPokok;
+    }
+
+    // memgembalikan Tanggal Lahir
+    public LocalDate getTanggalLahir() {
+        return tanggalLahir;
+    }
+
+    // mengembalikan tmt
+    public LocalDate gettmt() {
+        return tmt;
+    }
+
     // Menghitung masa kerja dari TMT hingga tanggal sekarang
     public Period getMasaKerja() {
         return tmt.until(LocalDate.now());
