@@ -18,6 +18,16 @@ public class DosenTamu extends Dosen {
         this.tanggalAkhirKontrak = tanggalAkhirKontrak;
     }
 
+    // mengembalikan nidk
+    public String getNidk() {
+        return nidk;
+    }
+
+    // mengembalikan tanggal Akhir kontrak
+    public LocalDate getTanggalAkhirKontrak() {
+        return tanggalAkhirKontrak;
+    }
+
     // Mengembalikan tunjangan dosen tamu
     @Override
     public double getTunjangan() {

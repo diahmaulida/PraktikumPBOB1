@@ -17,6 +17,16 @@ public class DosenTetap extends Dosen {
         this.nidn = nidn;
     }
 
+    // mengembalikan nidn
+    public String getNidn() {
+        return nidn;
+    }
+
+    // mengembalikan BUP
+    public int getBUP() {
+        return BUP;
+    }
+
     // mengembalikan Tunjangan dosen tetap
     @Override
     public double getTunjangan() {
