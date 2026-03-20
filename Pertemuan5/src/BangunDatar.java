@@ -3,6 +3,11 @@
 //Pembuat   = Diah Maulida Pratiwi-24060124120034
 //Tanggal   = 18 Maret 2026
 public abstract class BangunDatar {
+    // atribut
+    protected String warna;
+    protected String border;
+
+    //methode
     public abstract double getLuas();
     public abstract double getKeliling();
 
