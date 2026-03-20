@@ -1,3 +1,7 @@
+//Nama File = MManusia.java
+//Deskripsi = membuat main manusia
+//Pembuat   = Diah Maulida Pratiwi-24060124120034
+//Tanggal   = 20 Maret 2026
 import java.util.Date;
 import java.text.SimpleDateFormat;
 
