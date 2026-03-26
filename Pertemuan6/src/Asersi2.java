@@ -29,6 +29,7 @@ public class Asersi2 {
 }
  
 /*
+Jawab Pertanyaan
 Apa yang kurang tepat pada program Asersi2? 
 jawaban: kurang tepatnya yaitu pada letak penulisan assert assert (jariJari > 0) : "jari jari tidak boleh nol!!!";
 hal ini fungsinya assert jadi berubah yang harusnya mendetekse kesalahan logika internal program

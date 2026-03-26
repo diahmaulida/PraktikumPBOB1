@@ -25,7 +25,8 @@ public class AngkaSial {
         }
     }
 }
-/*
+/* 
+Jawaban Pertanyaan
 1. Ketika terjadi eksepsi, pada baris 12 di atas apakah dieksekusi?
 jawab: pada saat di angka 10 baris 12 masih dijalankan, tapi saat angka 13 dijalankan baris 12 tidak dijalankan 
 karena masuk ke dalam catch menjalankan exceptionnya, dan inputan setelah angka 13 yaitu 12 diabaikan.
