@@ -140,6 +140,10 @@ public class Mahasiswa {
             System.out.println("tidak menggunakan motor atau mobil");
         }
     }
+    public void tampilData() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'tampilData'");
+    }
     
 
 }
