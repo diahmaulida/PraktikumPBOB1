@@ -61,3 +61,12 @@ public class Main {
     }
 
 }
+
+/* Pada materi ini disimpulkan bahwa koleksi objek (collection) adalaha
+Struktur data yang digunakan untuk menyimpan sekumpulan objek. pada penerapan di java
+menggunakan library java.util. dalam praktikum ini kita menerapkan konsep list dna linkedlist.
+List adalah koleksi objek yang menyimpan elemen secara urut dan mengizikan adanya duplikat elemen dalam satu list
+Sedangkan Linkedlist adalah koleksi objek yang saling terhubung, yang dimana konsepnya gabaungana dari list dan 
+queue, sehingga List: Membuatnya bisa diakses berdasarkan indeks dan mengizinkan duplikat, dan dapat dilakukan
+Deque (Double Ended Queue): Membuatnya memiliki fungsi antrean seperti addFirst(), addLast(), peek(), dan poll().
+ */
